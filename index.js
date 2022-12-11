@@ -9,6 +9,6 @@ app.get("/",(req,res)=>{
 app.get("/name",(req,res)=>{
     res.send(`my name is ${process.env.name}`)
 })
-app.listen(9000,()=>{
+app.listen(process.env.port,()=>{
     console.log("listening9000....")
 })
